@@ -4,7 +4,7 @@ from cryptography.hazmat.backends import default_backend
 from P1_AES import AES128
 
 if __name__ == "__main__":
-    mensaje = b"MiquelAlex01234!"
+    mensaje = b"MiquelNombre123!"
     clave = b"ClaveSecreta1234"
 
     # 1. Cifrar usando P1_AES.py

@@ -1,6 +1,5 @@
 # python
 # P1_AES.py
-# Implementación mínima de AES-128 con interfaz AES128.encrypt_block(plaintext)
 
 SBOX = [
     0x63, 0x7c, 0x77, 0x7b, 0xf2, 0x6b, 0x6f, 0xc5, 0x30, 0x01, 0x67, 0x2b, 0xfe, 0xd7, 0xab, 0x76,
@@ -130,7 +129,6 @@ class AES128:
         return matrix2bytes(state)
 
 
-# Si se desea probar localmente sin afectar importaciones, usar:
 if __name__ == "__main__":
     # prueba rápida
     aes = AES128(b"ClaveSecreta1234")
