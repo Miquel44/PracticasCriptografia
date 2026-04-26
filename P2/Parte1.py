@@ -165,7 +165,7 @@ if __name__ == "__main__":
     print(f"Creando filtro real con m={m_total}, k={k_total}...")
     filtro_real = BloomFilterDoubleHashing(m_total, k_total)
 
-    directorios_datos = [os.path.join('data', 'data'), os.path.join('data', '__data')]
+    directorios_datos = ['data']
 
     elementos_anadidos = 0
     inicio_carga = time.time()
@@ -199,8 +199,7 @@ if __name__ == "__main__":
     print(f"\nSe han añadido {elementos_anadidos} elementos.")
     print(f"Tiempo total de inserción: {tiempo_total:.2f} segundos.")
 
-    # Opcional: Guardar el filtro real para no tener que volver a procesar 41GB
-    # filtro_real.save('filtro_dataset_completo.bin')
+    filtro_real.save('filtro_dataset_completo.bin')
 
     print("\nComprobando las contraseñas del enunciado contra el dataset REAL:")
     contrasenas_test = [
